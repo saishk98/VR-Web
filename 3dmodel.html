@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html" charset="utf-8" />
+        <title>3DModel</title>
+        <!-- Import the component -->
+        <!--<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>-->
+        <script type="module" src="js/model-viewer.min.js"></script>
+        <link rel="stylesheet" href="css/3dmodel.css" />
+        <link rel="stylesheet" href="modelviewer.dev/styles/docs.css" />
+        <link rel="stylesheet" href="modelviewer.dev/styles/examples.css" />
+        <script src="node_modules/focus-visible/dist/focus-visible.js" defer></script>
+        <script>
+            window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+            ga('create', 'UA-169901325-1', { 'storage': 'none' });
+            ga('set', 'referrer', document.referrer.split('?')[0]);
+            ga('set', 'anonymizeIp', true);
+            ga('send', 'pageview');
+        </script>
+        <script async src='https://www.google-analytics.com/analytics.js'></script>
+    </head>
+    <body>
+        <!-- Use it like any other HTML element -->
+        <model-viewer alt="Neil Armstrong's Spacesuit from the Smithsonian Digitization Programs Office and National Air and Space Museum" src="shared-assets/models/NeilArmstrong.glb" ar ar-modes="webxr scene-viewer quick-look" environment-image="shared-assets/environments/moon_1k.hdr" poster="assets/NeilArmstrong.webp" seamless-poster shadow-intensity="1" camera-controls>
+        </model-viewer>
+    </body>
+</html>

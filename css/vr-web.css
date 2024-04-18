@@ -1,0 +1,410 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+nav {
+    flex: 1;
+    text-align: right;
+}
+
+nav ul {
+    display: inline-block;
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+    color: greenyellow;
+}
+
+p {
+    color: chartreuse;
+}
+
+.container {
+    max-width: 1300px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.col-2 {
+    flex-basis: 50%;
+    min-width: 300px;
+}
+
+.col-2 img {
+    max-width: 100%;
+    padding: 50px 0;
+}
+
+.col-2 h1 {
+    font-size: 50px;
+    line-height: 60px;
+    margin: 25px 0;
+    color: lawngreen;
+}
+
+.btn {
+    display: inline-block;
+    background-color: midnightblue;
+    color: whitesmoke;
+    padding: 8px 30px;
+    margin: 30px 0;
+    border-radius: 30px;
+    transition: background 0.5s;
+}
+
+.btn:hover {
+    background: cyan;
+    color: red;
+    font-weight: bold;    
+}
+
+.header {
+    background: radial-gradient( royalblue,blue,navy);
+}
+
+.middle-section {
+    background: linear-gradient(royalblue, navy,blue);
+    max-width: 100%;
+    height: auto;
+}
+
+.h1-topic-title {
+    text-align: center;
+    color: chartreuse;
+    padding-top: 25px;
+}
+
+.para-ms {
+    padding-left: 75px;
+    padding-right: 75px;
+    color: whitesmoke;
+}
+
+.h2-question-title {
+    color: chartreuse;
+    padding-left: 75px;
+}
+
+.h2-index-title {
+    color: chartreuse;
+    padding-left: 15px;
+    padding-top: 15px;
+}
+
+.red {
+    color: orangered;
+}
+
+.green {
+    color: lime;
+}
+
+.h3-question-title {
+  color: chartreuse;
+  padding-left: 75px;
+}
+
+.gallery-row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+  padding-left: 37.5px;
+  padding-right: 37.5px;
+}
+
+/* Create four equal columns that sits next to each other */
+.gallery-column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.gallery-column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .gallery-column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .gallery-column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+.h1-gallery-title {
+  color: chartreuse;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.video-responsive{
+  overflow:hidden;
+  padding-bottom:56.25%;
+  position:relative;
+  height:0;
+  width: 640;
+  height: 470;
+}
+.video-responsive iframe{
+  left:0;
+  top:0;
+  height:100%;
+  width:100%;
+  position:absolute;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+/* CSS Images */
+img[alt=vr-img-p1] {
+  width: 40%;
+	max-width: 100%;
+	height: auto;
+	float: right;
+	display: block;
+  padding-right: 45px;
+  padding-top: 25px;
+  padding-left: 45px;
+}
+
+img[alt=vr-img-p2] {
+  width: 40%;
+	max-width: 100%;
+	height: auto;
+	float: right;
+	display: block;
+  padding-right: 45px;
+  padding-top: 50px;
+  padding-left: 45px;
+}
+
+img[alt=vr-img-p3] {
+  width: 40%;
+	max-width: 100%;
+	height: auto;
+	float: right;
+	display: block;
+  padding-right: 45px;
+  padding-top: 50px;
+  padding-left: 45px;
+}
+
+img[alt=vr-img-p4] {
+  width: 18%;
+	max-width: 100%;
+	height: auto;
+	float: left;
+	display: block;
+  padding-right: 25px;
+  padding-top: 25px;
+  padding-left: 5px;
+  padding-bottom: 25px;
+}
+
+img[alt=vr-img-p5] {
+  width: 40%;
+	max-width: 100%;
+	height: auto;
+	float: right;
+	display: block;
+  padding-right: 20px;
+  padding-top: 50px;
+  padding-left: 20px;
+}
+
+img[alt=vr-img-p6] {
+  width: 27.5%;
+	max-width: 100%;
+	height: auto;
+	float: left;
+	display: block;
+  padding-right: 50px;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-bottom: 20px;
+}
+
+.footer {
+    display: flex;
+    flex-flow: row wrap;
+    padding: 30px 30px 20px 30px;
+    color: chartreuse;
+    background: linear-gradient(midnightblue, royalblue, navy);
+}
+  
+.footer > * {
+    flex:  1 100%;
+}
+  
+.footer__addr {
+    margin-right: 1.25em;
+    margin-bottom: 2em;
+}
+  
+.footer__logo {
+    font-family: 'Pacifico', cursive;
+    font-weight: 400;
+    text-transform: lowercase;
+    font-size: 1.5rem;
+}
+  
+.footer__addr h2 {
+    margin-top: 1.3em;
+    font-size: 15px;
+    font-weight: 400;
+}  
+  
+.nav__title {
+    font-weight: bold;
+    font-size: 17.5px;
+}  
+  
+.footer address {
+    font-style: normal;
+    color: chartreuse;
+}  
+  
+.footer__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 36px;
+  max-width: max-content;
+  background-color: rgb(33, 33, 33, 0.07);
+  border-radius: 100px;
+  color: chartreuse;
+  line-height: 0;
+  margin: 0.6em 0;
+  font-size: 1rem;
+  padding: 0 1.3em;
+}  
+  
+.footer ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.footer li {
+  line-height: 2em;
+}
+
+.footer a {
+  text-decoration: none;
+}
+
+.footer__nav {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.footer__nav > * {
+  flex: 1 50%;
+  margin-right: 1.25em;
+}
+
+.nav__ul a {
+  color: chartreuse;
+}
+
+.nav__ul--extra {
+  column-count: 2;
+  column-gap: 1.25em;
+}
+
+.legal {
+  display: flex;
+  flex-wrap: wrap;
+  color: chartreuse;
+}
+  
+.legal__links {
+  display: flex;
+  align-items: center;
+}
+
+.heart {
+  color: red;
+}
+
+@media screen and (min-width: 24.375em) {
+  .legal .legal__links {
+    margin-left: auto;
+  }
+}
+
+@media screen and (min-width: 40.375em) {
+  .footer__nav > * {
+    flex: 1;
+  }
+  
+  .nav__item--extra {
+    flex-grow: 2;
+  }
+  
+  .footer__addr {
+    flex: 1 0px;
+  }
+  
+  .footer__nav {
+    flex: 2 0px;
+  }
+}
+
+  .footer-btn {
+    display: inline-block;
+    background-color: black;
+    color: whitesmoke;
+    padding: 8px 30px;
+    margin: 30px 0;
+    border-radius: 30px;
+    transition: background 0.5s;
+}
+
+.footer-btn:hover {
+    background: cyan;
+    color: red;
+    font-weight: bold;    
+}
